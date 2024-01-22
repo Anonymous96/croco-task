@@ -1,0 +1,43 @@
+.navigation__li {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.navigation__li .navigation__a {
+  color: #6a7787;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .navigation__ul .navigation__li .navigation__a.active {
+  filter: brightness(0) invert(1) grayscale(100%) contrast(100%);
+} */
+
+.navigation__a img {
+  margin-bottom: 8px;
+  fill: #6a7787;
+}
+
+.navigation__li.active {
+  color: #fff;
+  border-left: 3px solid green;
+}
+
+.navigation__li:hover,
+.navigation__li.active {
+  border-left: 3px solid green;
+}
+
+/* Styling for the label inside the navigation item */
+
+.navigation__li:hover .navigation__a,
+.navigation__li:hover .navigation__a img,
+.navigation__li.active .navigation__a img,
+.navigation__li.active .navigation__a {
+  color: #fff;
+  filter: brightness(0) invert(1);
+}

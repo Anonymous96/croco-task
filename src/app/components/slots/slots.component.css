@@ -1,0 +1,130 @@
+.slots-grid:first-child {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.grid-item:first-child {
+  height: 100%;
+}
+
+.slot-grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.category__section {
+  background-color: #272d36;
+  position: relative;
+}
+
+.category__section .slot__categories {
+  max-height: 53px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  transition: max-height 0.3s ease-in-out;
+  max-width: 90%;
+}
+
+.category__section .slot__categories .slot-category {
+  min-height: 53px;
+  color: #fff;
+  margin: 0 25px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.category__section .slot__categories .slot-category::after {
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  background-color: #15af44;
+  height: 8px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.category__section .slot__categories .slot-category.active::after {
+  left: 0;
+  width: 100%;
+}
+
+.category__section .slot__categories.active {
+  max-height: 1000px;
+  overflow: visible;
+}
+
+.category__section .slot__categories .see__more {
+  color: #fff;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.category__section .slot__categories .see__more img {
+  transition: 0.3s;
+}
+
+.loader__content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tab__section {
+  background-color: #1d242c;
+  position: relative;
+
+  margin-top: 10px;
+}
+
+.tab__section .tabs {
+  height: 53px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+
+  transition: max-height 0.3s ease-in-out;
+  max-width: 95%;
+}
+
+.tab__section .tabs .tab_item {
+  min-height: 51px;
+  color: #fff;
+  margin: 0 25px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  padding: 0 10px;
+}
+
+.tab__section .tabs .tab_item .category_count {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.tab__section .tabs .tab_item:hover {
+  border-bottom: 3px solid green;
+  color: green;
+}

@@ -1,0 +1,1773 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "Category",
+            "id": "interface-Category-eafd9d3923ebdebebad9aef9e888973a7b2e581596db48396b34beb8588d7e07d179c1c8c0ef38d8d9db3ffc98be58fc151da3b62cf2ff18bee2e4726e5990e9",
+            "file": "src/app/core/models/slots.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Providers {\n  iframeH: number;\n  iframeW: number;\n  name: string;\n  order: number;\n  provider: string;\n  tags: string[];\n  totalGames: number;\n  type: string;\n  vendor: string;\n  _id: string;\n}\n\nexport interface SlotsResponse {\n  data: SlotsByProvider;\n}\nexport interface Slots {\n  gameId: string;\n  game_id: number;\n  image: string;\n  image2: string;\n  imageSet: {\n    blurhash: string;\n    original: string;\n    webp: string;\n  };\n  name: string;\n  order: number;\n  provider: string;\n  providerName: string;\n  stats: any[];\n  tags: any[];\n  url: string;\n}\n\nexport interface ProviderResponse {\n  data: Providers[];\n}\n\nexport interface SlotsByProvider extends Providers {\n  games: Slots[];\n}\n\nexport interface CategoryResponse {\n  data: Category[];\n}\n\nexport interface Category {\n  type: string;\n  category: string;\n  platform?: string;\n  name: string;\n  order: number;\n  games: Slots[];\n  totalGames: number;\n  group: string;\n  selected?: boolean;\n}\n",
+            "properties": [
+                {
+                    "name": "category",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 50
+                },
+                {
+                    "name": "games",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Slots[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 54
+                },
+                {
+                    "name": "group",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 56
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 52
+                },
+                {
+                    "name": "order",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 53
+                },
+                {
+                    "name": "platform",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 51
+                },
+                {
+                    "name": "selected",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": true,
+                    "description": "",
+                    "line": 57
+                },
+                {
+                    "name": "totalGames",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 55
+                },
+                {
+                    "name": "type",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 49
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "CategoryResponse",
+            "id": "interface-CategoryResponse-eafd9d3923ebdebebad9aef9e888973a7b2e581596db48396b34beb8588d7e07d179c1c8c0ef38d8d9db3ffc98be58fc151da3b62cf2ff18bee2e4726e5990e9",
+            "file": "src/app/core/models/slots.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Providers {\n  iframeH: number;\n  iframeW: number;\n  name: string;\n  order: number;\n  provider: string;\n  tags: string[];\n  totalGames: number;\n  type: string;\n  vendor: string;\n  _id: string;\n}\n\nexport interface SlotsResponse {\n  data: SlotsByProvider;\n}\nexport interface Slots {\n  gameId: string;\n  game_id: number;\n  image: string;\n  image2: string;\n  imageSet: {\n    blurhash: string;\n    original: string;\n    webp: string;\n  };\n  name: string;\n  order: number;\n  provider: string;\n  providerName: string;\n  stats: any[];\n  tags: any[];\n  url: string;\n}\n\nexport interface ProviderResponse {\n  data: Providers[];\n}\n\nexport interface SlotsByProvider extends Providers {\n  games: Slots[];\n}\n\nexport interface CategoryResponse {\n  data: Category[];\n}\n\nexport interface Category {\n  type: string;\n  category: string;\n  platform?: string;\n  name: string;\n  order: number;\n  games: Slots[];\n  totalGames: number;\n  group: string;\n  selected?: boolean;\n}\n",
+            "properties": [
+                {
+                    "name": "data",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Category[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 45
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "ProviderResponse",
+            "id": "interface-ProviderResponse-eafd9d3923ebdebebad9aef9e888973a7b2e581596db48396b34beb8588d7e07d179c1c8c0ef38d8d9db3ffc98be58fc151da3b62cf2ff18bee2e4726e5990e9",
+            "file": "src/app/core/models/slots.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Providers {\n  iframeH: number;\n  iframeW: number;\n  name: string;\n  order: number;\n  provider: string;\n  tags: string[];\n  totalGames: number;\n  type: string;\n  vendor: string;\n  _id: string;\n}\n\nexport interface SlotsResponse {\n  data: SlotsByProvider;\n}\nexport interface Slots {\n  gameId: string;\n  game_id: number;\n  image: string;\n  image2: string;\n  imageSet: {\n    blurhash: string;\n    original: string;\n    webp: string;\n  };\n  name: string;\n  order: number;\n  provider: string;\n  providerName: string;\n  stats: any[];\n  tags: any[];\n  url: string;\n}\n\nexport interface ProviderResponse {\n  data: Providers[];\n}\n\nexport interface SlotsByProvider extends Providers {\n  games: Slots[];\n}\n\nexport interface CategoryResponse {\n  data: Category[];\n}\n\nexport interface Category {\n  type: string;\n  category: string;\n  platform?: string;\n  name: string;\n  order: number;\n  games: Slots[];\n  totalGames: number;\n  group: string;\n  selected?: boolean;\n}\n",
+            "properties": [
+                {
+                    "name": "data",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Providers[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 37
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "Providers",
+            "id": "interface-Providers-eafd9d3923ebdebebad9aef9e888973a7b2e581596db48396b34beb8588d7e07d179c1c8c0ef38d8d9db3ffc98be58fc151da3b62cf2ff18bee2e4726e5990e9",
+            "file": "src/app/core/models/slots.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Providers {\n  iframeH: number;\n  iframeW: number;\n  name: string;\n  order: number;\n  provider: string;\n  tags: string[];\n  totalGames: number;\n  type: string;\n  vendor: string;\n  _id: string;\n}\n\nexport interface SlotsResponse {\n  data: SlotsByProvider;\n}\nexport interface Slots {\n  gameId: string;\n  game_id: number;\n  image: string;\n  image2: string;\n  imageSet: {\n    blurhash: string;\n    original: string;\n    webp: string;\n  };\n  name: string;\n  order: number;\n  provider: string;\n  providerName: string;\n  stats: any[];\n  tags: any[];\n  url: string;\n}\n\nexport interface ProviderResponse {\n  data: Providers[];\n}\n\nexport interface SlotsByProvider extends Providers {\n  games: Slots[];\n}\n\nexport interface CategoryResponse {\n  data: Category[];\n}\n\nexport interface Category {\n  type: string;\n  category: string;\n  platform?: string;\n  name: string;\n  order: number;\n  games: Slots[];\n  totalGames: number;\n  group: string;\n  selected?: boolean;\n}\n",
+            "properties": [
+                {
+                    "name": "_id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                },
+                {
+                    "name": "iframeH",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "iframeW",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "order",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "provider",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "tags",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 7
+                },
+                {
+                    "name": "totalGames",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 8
+                },
+                {
+                    "name": "type",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                },
+                {
+                    "name": "vendor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 10
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "Slots",
+            "id": "interface-Slots-eafd9d3923ebdebebad9aef9e888973a7b2e581596db48396b34beb8588d7e07d179c1c8c0ef38d8d9db3ffc98be58fc151da3b62cf2ff18bee2e4726e5990e9",
+            "file": "src/app/core/models/slots.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Providers {\n  iframeH: number;\n  iframeW: number;\n  name: string;\n  order: number;\n  provider: string;\n  tags: string[];\n  totalGames: number;\n  type: string;\n  vendor: string;\n  _id: string;\n}\n\nexport interface SlotsResponse {\n  data: SlotsByProvider;\n}\nexport interface Slots {\n  gameId: string;\n  game_id: number;\n  image: string;\n  image2: string;\n  imageSet: {\n    blurhash: string;\n    original: string;\n    webp: string;\n  };\n  name: string;\n  order: number;\n  provider: string;\n  providerName: string;\n  stats: any[];\n  tags: any[];\n  url: string;\n}\n\nexport interface ProviderResponse {\n  data: Providers[];\n}\n\nexport interface SlotsByProvider extends Providers {\n  games: Slots[];\n}\n\nexport interface CategoryResponse {\n  data: Category[];\n}\n\nexport interface Category {\n  type: string;\n  category: string;\n  platform?: string;\n  name: string;\n  order: number;\n  games: Slots[];\n  totalGames: number;\n  group: string;\n  selected?: boolean;\n}\n",
+            "properties": [
+                {
+                    "name": "game_id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                },
+                {
+                    "name": "gameId",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 18
+                },
+                {
+                    "name": "image",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                },
+                {
+                    "name": "image2",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                },
+                {
+                    "name": "imageSet",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type",
+                    "optional": false,
+                    "description": "",
+                    "line": 22
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 27
+                },
+                {
+                    "name": "order",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 28
+                },
+                {
+                    "name": "provider",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 29
+                },
+                {
+                    "name": "providerName",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 30
+                },
+                {
+                    "name": "stats",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 31
+                },
+                {
+                    "name": "tags",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 32
+                },
+                {
+                    "name": "url",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 33
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "SlotsByProvider",
+            "id": "interface-SlotsByProvider-eafd9d3923ebdebebad9aef9e888973a7b2e581596db48396b34beb8588d7e07d179c1c8c0ef38d8d9db3ffc98be58fc151da3b62cf2ff18bee2e4726e5990e9",
+            "file": "src/app/core/models/slots.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Providers {\n  iframeH: number;\n  iframeW: number;\n  name: string;\n  order: number;\n  provider: string;\n  tags: string[];\n  totalGames: number;\n  type: string;\n  vendor: string;\n  _id: string;\n}\n\nexport interface SlotsResponse {\n  data: SlotsByProvider;\n}\nexport interface Slots {\n  gameId: string;\n  game_id: number;\n  image: string;\n  image2: string;\n  imageSet: {\n    blurhash: string;\n    original: string;\n    webp: string;\n  };\n  name: string;\n  order: number;\n  provider: string;\n  providerName: string;\n  stats: any[];\n  tags: any[];\n  url: string;\n}\n\nexport interface ProviderResponse {\n  data: Providers[];\n}\n\nexport interface SlotsByProvider extends Providers {\n  games: Slots[];\n}\n\nexport interface CategoryResponse {\n  data: Category[];\n}\n\nexport interface Category {\n  type: string;\n  category: string;\n  platform?: string;\n  name: string;\n  order: number;\n  games: Slots[];\n  totalGames: number;\n  group: string;\n  selected?: boolean;\n}\n",
+            "properties": [
+                {
+                    "name": "games",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Slots[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 41
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": [
+                "Providers"
+            ]
+        },
+        {
+            "name": "SlotsResponse",
+            "id": "interface-SlotsResponse-eafd9d3923ebdebebad9aef9e888973a7b2e581596db48396b34beb8588d7e07d179c1c8c0ef38d8d9db3ffc98be58fc151da3b62cf2ff18bee2e4726e5990e9",
+            "file": "src/app/core/models/slots.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Providers {\n  iframeH: number;\n  iframeW: number;\n  name: string;\n  order: number;\n  provider: string;\n  tags: string[];\n  totalGames: number;\n  type: string;\n  vendor: string;\n  _id: string;\n}\n\nexport interface SlotsResponse {\n  data: SlotsByProvider;\n}\nexport interface Slots {\n  gameId: string;\n  game_id: number;\n  image: string;\n  image2: string;\n  imageSet: {\n    blurhash: string;\n    original: string;\n    webp: string;\n  };\n  name: string;\n  order: number;\n  provider: string;\n  providerName: string;\n  stats: any[];\n  tags: any[];\n  url: string;\n}\n\nexport interface ProviderResponse {\n  data: Providers[];\n}\n\nexport interface SlotsByProvider extends Providers {\n  games: Slots[];\n}\n\nexport interface CategoryResponse {\n  data: Category[];\n}\n\nexport interface Category {\n  type: string;\n  category: string;\n  platform?: string;\n  name: string;\n  order: number;\n  games: Slots[];\n  totalGames: number;\n  group: string;\n  selected?: boolean;\n}\n",
+            "properties": [
+                {
+                    "name": "data",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "SlotsByProvider",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "User",
+            "id": "interface-User-d4821beac0e4a852e513391b7470981c4353fdd95a18628bb68136c8695b489ee15b926e2e5031bc26cf30e1508e0a362c3ee13a06734702b4d15af140e485d5",
+            "file": "src/stories/user.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface User {\n  name: string;\n}\n",
+            "properties": [
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        }
+    ],
+    "injectables": [
+        {
+            "name": "SlotsServiceService",
+            "id": "injectable-SlotsServiceService-17bfae0fe3417aa01a22439b3dc6a244e447769ce8cbae502b720b31447a65378a1e10e8abecc7608e04222d4f2dcc24db165a804ebd4df54ab1bfb5f2492dbb",
+            "file": "src/app/core/services/slots-service.service.ts",
+            "properties": [
+                {
+                    "name": "baseUrl",
+                    "defaultValue": "environment.serverUrl",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 18
+                }
+            ],
+            "methods": [
+                {
+                    "name": "getCategories",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Observable<Category[]>",
+                    "typeParameters": [],
+                    "line": 41,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getProviders",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Observable<Providers[]>",
+                    "typeParameters": [],
+                    "line": 21,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getSlotsByProvider",
+                    "args": [
+                        {
+                            "name": "provider",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Observable<SlotsByProvider>",
+                    "typeParameters": [],
+                    "line": 31,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "provider",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "handleError",
+                    "args": [
+                        {
+                            "name": "error",
+                            "type": "Error",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Observable<never>",
+                    "typeParameters": [],
+                    "line": 51,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "error",
+                            "type": "Error",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { HttpClient, HttpParams } from '@angular/common/http';\nimport { Injectable } from '@angular/core';\nimport { Observable, catchError, map, share, throwError } from 'rxjs';\nimport {\n  Category,\n  CategoryResponse,\n  ProviderResponse,\n  Providers,\n  SlotsByProvider,\n  SlotsResponse,\n} from '../models/slots.model';\nimport { environment } from '../../../environments/environment';\n\n@Injectable({\n  providedIn: 'root',\n})\nexport class SlotsServiceService {\n  baseUrl = environment.serverUrl;\n  constructor(private http: HttpClient) {}\n\n  getProviders(): Observable<Providers[]> {\n    const params = new HttpParams()\n      .set('type', 'slot')\n      .set('platform', 'desktop');\n    return this.http.get<ProviderResponse>(`${this.baseUrl}`, { params }).pipe(\n      map((items) => items?.data),\n      catchError((error) => this.handleError(error))\n    );\n  }\n\n  getSlotsByProvider(provider: string): Observable<SlotsByProvider> {\n    return this.http\n      .get<SlotsResponse>(`${this.baseUrl}/v2/slot/providers/${provider}`)\n      .pipe(\n        share(),\n        map((items) => items?.data),\n        catchError((error) => this.handleError(error))\n      );\n  }\n\n  getCategories(): Observable<Category[]> {\n    return this.http\n      .get<CategoryResponse>(`${this.baseUrl}/v2/slot/categories?include=games`)\n      .pipe(\n        share(),\n        map((items) => items?.data),\n        catchError((error) => this.handleError(error))\n      );\n  }\n\n  private handleError(error: Error): Observable<never> {\n    console.error('Error:', error);\n    alert('Error occurred');\n    return throwError('Error occurred');\n  }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "http",
+                        "type": "HttpClient",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 18,
+                "jsdoctags": [
+                    {
+                        "name": "http",
+                        "type": "HttpClient",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "extends": [],
+            "type": "injectable"
+        }
+    ],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-76953388ac1f5063de1ce8ff565f2b332e0b8dd2e74df49f3f1a9b054e76a195d2b80eaa7b99d426ebd87292287e82bf40bfe5d7dc4c9d6670cbb301f880cda7",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'croco-task'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "RouterOutlet"
+                },
+                {
+                    "name": "MenuItemComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { RouterOutlet } from '@angular/router';\nimport { MenuItemComponent } from '../stories/menu-item/menut-item.components';\n\n@Component({\n  selector: 'app-root',\n  standalone: true,\n  imports: [RouterOutlet, MenuItemComponent],\n  templateUrl: './app.component.html',\n  styleUrl: './app.component.css',\n})\nexport class AppComponent {\n  title = 'croco-task';\n}\n",
+            "styleUrl": "./app.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<body>\n  <div class=\"grid-container\">\n    <header>\n      <div class=\"user__info\" style=\"text-align: end; width: 100%\"></div>\n    </header>\n    <nav class=\"navbar\">\n      <a class=\"logo\">\n        <img src=\"assets/images/logo.svg\" alt=\"\" />\n      </a>\n      <ul class=\"navigation__ul\">\n        <storybook-nav-item\n          label=\"Sport\"\n          imgUrl=\"assets/images/sport.svg\"\n        ></storybook-nav-item>\n        <storybook-nav-item\n          label=\"Live\"\n          imgUrl=\"assets/images/live.svg\"\n        ></storybook-nav-item>\n        <storybook-nav-item\n          label=\"Slots\"\n          imgUrl=\"assets/images/slot-icon.svg\"\n          [active]=\"true\"\n        ></storybook-nav-item>\n        <storybook-nav-item\n          label=\"Casino\"\n          imgUrl=\"assets/images/casino-icon.svg\"\n        ></storybook-nav-item>\n      </ul>\n    </nav>\n    <main>\n      <router-outlet></router-outlet>\n    </main>\n  </div>\n</body>\n"
+        },
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-69ba1b2ecdc7d91436c4c14eb55c5d5c0acd1f139747b98758a9d75499058dfcfe1e3fe65a5de60d5ffcfdd50dd19ce8d4ea6acbf5c5bf5af795b51fa699c843",
+            "file": "src/stories/button/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-button",
+            "styleUrls": [
+                "./button.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "backgroundColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 25,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "primary",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                },
+                {
+                    "name": "stretched",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "boolean",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 28,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  standalone: true,\n  imports: [CommonModule],\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.css'],\n})\nexport class ButtonComponent {\n  @Input()\n  primary = false;\n\n  @Input()\n  backgroundColor?: string;\n\n  @Input()\n  stretched?: boolean;\n\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  @Input()\n  label = 'Button';\n\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary\n      ? 'storybook-button--primary'\n      : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-button {\n  font-family: \"Nunito Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border: 0;\n  border-radius: 4px;\n  cursor: pointer;\n  display: inline-block;\n  line-height: 1;\n}\n.storybook-button--primary {\n  color: white;\n  background-color: #15af44;\n}\n.storybook-button--secondary {\n  color: #333;\n  background-color: transparent;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n}\n.storybook-button--small {\n  font-size: 12px;\n  padding: 6px 10px;\n}\n.storybook-button--medium {\n  font-size: 14px;\n  padding: 11px 20px;\n}\n.storybook-button--large {\n  font-size: 16px;\n  padding: 12px 24px;\n}\n",
+                    "styleUrl": "./button.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 30
+                    }
+                }
+            },
+            "templateData": "<button\n  type=\"button\"\n  (click)=\"onClick.emit($event)\"\n  [ngClass]=\"classes\"\n  [ngStyle]=\"{ 'background-color': backgroundColor }\"\n>\n  {{ label }}\n</button>\n"
+        },
+        {
+            "name": "MenuItemComponent",
+            "id": "component-MenuItemComponent-09207a402f729643c001a64cfa96bbd87b090e7c8d382263bf6bddc8bf3caaaae6a0696aa4f517efcb29aa159391d34f912f5e7b227b585abe8d878bfdf0c88e",
+            "file": "src/stories/menu-item/menut-item.components.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-nav-item",
+            "styleUrls": [
+                "./menu-item.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./menu-item.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "active",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "imgUrl",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Slots'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nOptional click handler\n",
+                    "description": "<p>Optional click handler</p>\n",
+                    "line": 25,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-nav-item',\n  standalone: true,\n  imports: [CommonModule],\n  templateUrl: './menu-item.component.html',\n  styleUrls: ['./menu-item.css'],\n})\nexport class MenuItemComponent {\n  @Input()\n  label = 'Slots';\n\n  @Input()\n  imgUrl = '';\n\n  @Input()\n  active: boolean = false;\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".navigation__li {\n  margin-top: 30px;\n  margin-bottom: 30px;\n  list-style-type: none;\n  cursor: pointer;\n}\n\n.navigation__li .navigation__a {\n  color: #6a7787;\n  display: flex;\n  justify-content: center;\n  flex-direction: column;\n  align-items: center;\n}\n\n/* .navigation__ul .navigation__li .navigation__a.active {\n  filter: brightness(0) invert(1) grayscale(100%) contrast(100%);\n} */\n\n.navigation__a img {\n  margin-bottom: 8px;\n  fill: #6a7787;\n}\n\n.navigation__li.active {\n  color: var(--white);\n  border-left: 3px solid green;\n}\n\n.navigation__li:hover,\n.navigation__li.active {\n  border-left: 3px solid green;\n}\n\n/* Styling for the label inside the navigation item */\n\n.navigation__li:hover .navigation__a,\n.navigation__li:hover .navigation__a img,\n.navigation__li.active .navigation__a img,\n.navigation__li.active .navigation__a {\n  color: var(--white);\n  filter: brightness(0) invert(1);\n}\n",
+                    "styleUrl": "./menu-item.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<li class=\"navigation__li\" [ngClass]=\"{ active: active }\">\n  <a class=\"navigation__a\">\n    <img [src]=\"imgUrl\" />\n    {{ label }}\n  </a>\n</li>\n"
+        },
+        {
+            "name": "SlotItemComponent",
+            "id": "component-SlotItemComponent-966dba767fafae5ad91155319a735cf33db4b198f8a44b7dc0b6661ab0b2c6c0bdd3f38f302c87d5f23991acc16053d7582b3024be4ac69be18ef0353bcbcb6d",
+            "file": "src/stories/slot-item/slot-item.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "slot-item",
+            "styleUrls": [
+                "./slot-item.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./slot-item.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "imgUrl",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "tags",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "string[]",
+                    "decorators": []
+                },
+                {
+                    "name": "title",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 23,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "ButtonComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, Input, Output, EventEmitter } from '@angular/core';\nimport { ButtonComponent } from '../button/button.component';\n\n@Component({\n  selector: 'slot-item',\n  standalone: true,\n  imports: [CommonModule, ButtonComponent],\n  templateUrl: './slot-item.component.html',\n  styleUrls: ['./slot-item.css'],\n})\nexport class SlotItemComponent {\n  @Input()\n  title = '';\n\n  @Input()\n  imgUrl = '';\n\n  @Input()\n  tags: string[] = [];\n\n  @Output()\n  onClick = new EventEmitter<Event>();\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".grid-item {\n  margin: 5px 0;\n  display: flex;\n  align-items: end;\n  justify-content: center;\n  background-color: var(--darkGrey);\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  min-height: 180px;\n  position: relative;\n}\n\n.grid-item .text {\n  background-color: var(--darkGrey2);\n  width: 100%;\n  color: var(--white);\n  min-height: 38px;\n  padding: 5px;\n  font-size: 14px;\n  display: flex;\n  align-items: center;\n  transition: 0.3s;\n}\n\n.grid-item .play__overlay {\n  visibility: hidden;\n  opacity: 0;\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: calc(100% - 48px);\n  z-index: 15;\n  background-color: rgba(0, 0, 0, 0.5);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  transition: 0.3s;\n}\n\n.grid-item:hover .play__overlay {\n  visibility: visible;\n  opacity: 1;\n}\n\n.grid-item:hover .text {\n  background-color: var(--hoverGrey);\n}\n\n.tag {\n  position: absolute;\n  left: 0.5rem;\n  top: 0.5rem;\n}\n\n/* .tag-button {\n  margin-left: 0.125rem;\n  background-color: var(--green);\n  color: var(--white);\n  border: none;\n  height: 20px;\n  cursor: pointer;\n  border-radius: 4px;\n  font-size: 12px;\n} */\n",
+                    "styleUrl": "./slot-item.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"grid-item\" [style.backgroundImage]=\"'url(' + imgUrl + ')'\">\n  <div class=\"tag\">\n    @if(tags?.length){ @for(tag of tags; track tag) {\n    <storybook-button\n      [primary]=\"true\"\n      size=\"small\"\n      [label]=\"tag | uppercase\"\n    ></storybook-button>\n    } }\n  </div>\n  <span class=\"text\">{{ title }}</span>\n\n  <div class=\"play__overlay\">\n    <!-- <button class=\"play__button\">PLAY</button> -->\n    <storybook-button\n      [primary]=\"true\"\n      size=\"large\"\n      label=\"PLAY\"\n    ></storybook-button>\n  </div>\n</div>\n<!-- <div class=\"slot-grid-container\">\n  @for(slot of slots; track slot.gameId) {\n\n  <div class=\"grid-item\" [style.backgroundImage]=\"'url(' + slot.image + ')'\">\n    <span class=\"text\">{{ slot.name }}</span>\n\n    <div class=\"play__overlay\">\n      <button class=\"play__button\">PLAY</button>\n    </div>\n  </div>\n  }@empty { No slots }\n</div> -->\n"
+        },
+        {
+            "name": "SlotsComponent",
+            "id": "component-SlotsComponent-6ad35f6b340313b2d13495483a61b830a5f9cc8ae3974e8eb02d0f15e6700df137adbb0ef654aff7e7dadf2cade14937fe198ccd066dece4b57fd41a53300993",
+            "file": "src/app/components/slots/slots.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-slots",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./slots.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "showAllProviders",
+                    "defaultValue": "signal<boolean>(false)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                },
+                {
+                    "name": "slotCategories",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Category[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                },
+                {
+                    "name": "slotProviders",
+                    "defaultValue": "signal<Providers[]>([])",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                },
+                {
+                    "name": "slots",
+                    "defaultValue": "signal<Slots[]>([])",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 18
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "getCategories",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 42,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getProviders",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 30,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getSlots",
+                    "args": [
+                        {
+                            "name": "provider",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 36,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "provider",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 24,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "selectCategory",
+                    "args": [
+                        {
+                            "name": "category",
+                            "type": "Category",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 56,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "category",
+                            "type": "Category",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "toggleDrodown",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 52,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "SlotItemComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, signal } from '@angular/core';\nimport { SlotsServiceService } from '../../core/services/slots-service.service';\nimport { Category, Providers, Slots } from '../../core/models/slots.model';\nimport { SlotItemComponent } from '../../../stories/slot-item/slot-item.component';\nimport { CommonModule } from '@angular/common';\n\nconst SELECTED_PROVIDER = 'egt';\n\n@Component({\n  selector: 'app-slots',\n  standalone: true,\n  imports: [SlotItemComponent, CommonModule],\n  templateUrl: './slots.component.html',\n  styleUrl: './slots.component.css',\n})\nexport class SlotsComponent {\n  slotProviders = signal<Providers[]>([]);\n  slots = signal<Slots[]>([]);\n  showAllProviders = signal<boolean>(false);\n  slotCategories: Category[] = [];\n\n  constructor(private slotsService: SlotsServiceService) {}\n\n  ngOnInit() {\n    this.getProviders();\n    this.getSlots(SELECTED_PROVIDER);\n    this.getCategories();\n  }\n\n  getProviders() {\n    this.slotsService.getProviders().subscribe((providers: Providers[]) => {\n      this.slotProviders.set(providers);\n    });\n  }\n\n  getSlots(provider: string) {\n    this.slotsService.getSlotsByProvider(provider).subscribe((res) => {\n      this.slots.set(res.games);\n    });\n  }\n\n  getCategories() {\n    this.slotsService.getCategories().subscribe((res) => {\n      this.slotCategories = res.filter((item) => item.platform != 'mobile');\n      console.log(\n        res.filter((item) => item.platform != 'mobile'),\n        ' RES'\n      );\n    });\n  }\n\n  toggleDrodown() {\n    this.showAllProviders.set(!this.showAllProviders());\n  }\n\n  selectCategory(category: Category) {\n    this.slots.set(category.games);\n  }\n}\n",
+            "styleUrl": "./slots.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "slotsService",
+                        "type": "SlotsServiceService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 20,
+                "jsdoctags": [
+                    {
+                        "name": "slotsService",
+                        "type": "SlotsServiceService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "extends": [],
+            "templateData": "<section class=\"banner__section\"></section>\n<section class=\"tab__section\">\n  <div class=\"tabs\">\n    @if (slotCategories?.length){ @for (category of slotCategories; track\n    category.name) {\n    <div class=\"tab_item\" (click)=\"selectCategory(category)\">\n      <span style=\"margin-left: 0.5rem\">{{ category.name }}</span>\n      <div class=\"count_container\" style=\"font-size: 11px\">\n        {{ category.totalGames }}\n      </div>\n    </div>\n\n    } @empty { No categories } }\n  </div>\n</section>\n<section class=\"category__section\">\n  @if (slotProviders()?.length){\n  <div class=\"slot__categories\" [ngClass]=\"{ active: showAllProviders() }\">\n    @for (provider of slotProviders(); track provider._id) {\n    <div class=\"slot-category\" (click)=\"getSlots(provider.provider)\">\n      {{ provider.name }}\n    </div>\n\n    } @empty { No Providers }\n\n    <div class=\"see__more\" (click)=\"toggleDrodown()\">\n      See {{ !showAllProviders() ? \"More\" : \"Less\" }}\n      <img src=\"assets/images/arrow-down.svg\" alt=\"\" />\n    </div>\n  </div>\n  }\n</section>\n\n<section>\n  <section class=\"slots__Section\">\n    @if(slots()?.length){\n    <div class=\"slot-grid-container\">\n      @for(slot of slots(); track slot.gameId) {\n      <slot-item\n        class=\"slots-grid\"\n        [title]=\"slot.name\"\n        [imgUrl]=\"slot.image\"\n        [tags]=\"slot.tags\"\n      ></slot-item>\n\n      }@empty { No slots }\n    </div>\n    }@else { Something is not correct }\n  </section>\n</section>\n"
+        }
+    ],
+    "modules": [],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "appConfig",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/app.config.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "ApplicationConfig",
+                "defaultValue": "{\n  providers: [provideRouter(routes), provideHttpClient()],\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  serverUrl: 'https://cms.crocobet.com/integrations',\n}"
+            },
+            {
+                "name": "Large",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<ButtonComponent>",
+                "defaultValue": "{\n  title: 'Button',\n  component: ButtonComponent,\n  tags: ['autodocs'],\n  render: (args: ButtonComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/menu-item/menu-item.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<MenuItemComponent>",
+                "defaultValue": "{\n  title: 'Example/Menu-Item',\n  component: MenuItemComponent,\n  tags: ['autodocs'],\n  render: (args: MenuItemComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/slot-item/slot-item.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<SlotItemComponent>",
+                "defaultValue": "{\n  title: 'Slot Item',\n  component: SlotItemComponent,\n  tags: ['autodocs'],\n  render: (args: SlotItemComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+            },
+            {
+                "name": "preview",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": ".storybook/preview.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Preview",
+                "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n  },\n}"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/menu-item/menu-item.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'Slots',\n    imgUrl: '../../assets/images/slot-icon.svg',\n    active: true,\n  },\n}"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/slot-item/slot-item.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    title: 'Slots',\n    imgUrl: 'https://static.crocobet.com/cms/slot/egt/801.jpg',\n  },\n}"
+            },
+            {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
+            },
+            {
+                "name": "SELECTED_PROVIDER",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/slots/slots.component.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "string",
+                "defaultValue": "'egt'"
+            },
+            {
+                "name": "Small",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    size: 'small',\n    label: 'Button',\n  },\n}"
+            }
+        ],
+        "functions": [],
+        "typealiases": [
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<ButtonComponent>",
+                "file": "src/stories/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<MenuItemComponent>",
+                "file": "src/stories/menu-item/menu-item.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<SlotItemComponent>",
+                "file": "src/stories/slot-item/slot-item.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            }
+        ],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/app/app.config.ts": [
+                {
+                    "name": "appConfig",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/app.config.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ApplicationConfig",
+                    "defaultValue": "{\n  providers: [provideRouter(routes), provideHttpClient()],\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  serverUrl: 'https://cms.crocobet.com/integrations',\n}"
+                }
+            ],
+            "src/stories/button/button.stories.ts": [
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<ButtonComponent>",
+                    "defaultValue": "{\n  title: 'Button',\n  component: ButtonComponent,\n  tags: ['autodocs'],\n  render: (args: ButtonComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n  },\n}"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    size: 'small',\n    label: 'Button',\n  },\n}"
+                }
+            ],
+            "src/stories/menu-item/menu-item.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/menu-item/menu-item.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<MenuItemComponent>",
+                    "defaultValue": "{\n  title: 'Example/Menu-Item',\n  component: MenuItemComponent,\n  tags: ['autodocs'],\n  render: (args: MenuItemComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n}"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/menu-item/menu-item.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'Slots',\n    imgUrl: '../../assets/images/slot-icon.svg',\n    active: true,\n  },\n}"
+                }
+            ],
+            "src/stories/slot-item/slot-item.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/slot-item/slot-item.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<SlotItemComponent>",
+                    "defaultValue": "{\n  title: 'Slot Item',\n  component: SlotItemComponent,\n  tags: ['autodocs'],\n  render: (args: SlotItemComponent) => ({\n    props: {\n      ...args,\n    },\n  }),\n}"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/slot-item/slot-item.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    title: 'Slots',\n    imgUrl: 'https://static.crocobet.com/cms/slot/egt/801.jpg',\n  },\n}"
+                }
+            ],
+            ".storybook/preview.ts": [
+                {
+                    "name": "preview",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": ".storybook/preview.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Preview",
+                    "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+                }
+            ],
+            "src/app/components/slots/slots.component.ts": [
+                {
+                    "name": "SELECTED_PROVIDER",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/slots/slots.component.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "defaultValue": "'egt'"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {
+            "src/stories/button/button.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<ButtonComponent>",
+                    "file": "src/stories/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "src/stories/menu-item/menu-item.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<MenuItemComponent>",
+                    "file": "src/stories/menu-item/menu-item.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "src/stories/slot-item/slot-item.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<SlotItemComponent>",
+                    "file": "src/stories/slot-item/slot-item.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ]
+        }
+    },
+    "routes": [],
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": ".storybook/preview.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "preview",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.config.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "appConfig",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/slots/slots.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SlotsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/12",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/slots/slots.component.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SELECTED_PROVIDER",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/core/models/slots.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Category",
+                "coveragePercent": 0,
+                "coverageCount": "0/10",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/core/models/slots.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "CategoryResponse",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/core/models/slots.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "ProviderResponse",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/core/models/slots.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Providers",
+                "coveragePercent": 0,
+                "coverageCount": "0/11",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/core/models/slots.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Slots",
+                "coveragePercent": 0,
+                "coverageCount": "0/13",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/core/models/slots.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "SlotsByProvider",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/core/models/slots.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "SlotsResponse",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/core/services/slots-service.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "SlotsServiceService",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Large",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/menu-item/menu-item.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/menu-item/menu-item.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/menu-item/menut-item.components.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MenuItemComponent",
+                "coveragePercent": 20,
+                "coverageCount": "1/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/slot-item/slot-item.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SlotItemComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/slot-item/slot-item.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/slot-item/slot-item.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/user.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "User",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            }
+        ]
+    }
+}

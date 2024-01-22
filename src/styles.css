@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "./assets/styles/slots.css";
+
+.banner__section {
+  min-height: 420px;
+  height: 200px;
+  background-image: url(/assets/images/banner.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.category__section {
+  background-color: #272d36;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  font-family: google-font;
+}
+
+main {
+  grid-area: content;
+  padding: 8px;
+  background-color: #1a1e23;
+}

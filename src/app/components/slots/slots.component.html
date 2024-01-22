@@ -1,0 +1,56 @@
+<section class="banner__section"></section>
+<section class="tab__section">
+  <div class="tabs">
+    @if (slotCategories.length){ @for (category of slotCategories; track
+    category.name) {
+    <div class="tab_item" (click)="selectCategory(category)">
+      <span style="margin-left: 0.5rem">{{ category.name }}</span>
+      <div class="category_count" style="font-size: 11px">
+        {{ category.totalGames }}
+      </div>
+    </div>
+
+    } @empty { No categories } }
+  </div>
+</section>
+<section class="category__section">
+  @if (slotProviders().length){
+  <div class="slot__categories" [ngClass]="{ active: showAllProviders() }">
+    @for (provider of slotProviders(); track provider._id) {
+    <div class="slot-category" (click)="getSlots(provider.provider)">
+      {{ provider.name }}
+    </div>
+
+    } @empty { No Providers }
+
+    <div class="see__more" (click)="toggleDrodown()">
+      See {{ !showAllProviders() ? "More" : "Less" }}
+
+      @if(!showAllProviders()){
+      <img src="assets/images/arrow-down.svg" alt="" />
+      } @else {
+      <img src="assets/images/arrow-up.svg" alt="" />
+      }
+    </div>
+  </div>
+  }
+</section>
+
+<section>
+  <section class="slots__Section">
+    @if(slots().length){
+    <div class="slot-grid-container">
+      @for(slot of slots(); track slot.gameId) {
+      <slot-item
+        class="slots-grid"
+        [title]="slot.name"
+        [imgUrl]="slot.image"
+        [tags]="slot.tags"
+        (onClick)="onPlayHandle(slot)"
+      ></slot-item>
+
+      }@empty { No slots }
+    </div>
+    }@else { Something is not correct }
+  </section>
+</section>
