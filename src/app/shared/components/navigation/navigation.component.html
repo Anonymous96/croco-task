@@ -1,0 +1,14 @@
+<nav class="navbar">
+  <a class="logo">
+    <img src="assets/images/logo.svg" alt="" />
+  </a>
+  <ul class="navigation__ul">
+    @if(navItems.length){ @for (item of navItems; track $index) {
+    <app-nav-item
+      [label]="item.label"
+      [imgUrl]="item.img"
+      [active]="item.selected"
+    ></app-nav-item>
+    } }
+  </ul>
+</nav>

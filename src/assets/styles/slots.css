@@ -1,14 +1,3 @@
-/* main grid container */
-.grid-container {
-  display: grid;
-  grid-template-columns: 80px 1fr; /* Sidebar and Content areas */
-  grid-template-rows: 80px 1fr;
-  grid-template-areas:
-    "sidebar header"
-    "sidebar content";
-  min-height: 100vh;
-}
-
 header {
   grid-area: header;
   background-color: #252b33;
@@ -24,7 +13,6 @@ main {
   background-color: #252b33;
 }
 
-/* reset */
 body {
   margin: 0;
   font-family: google-font;
@@ -42,16 +30,6 @@ ul {
 a {
   list-style-type: none;
   text-decoration: none;
-}
-
-/* slots [age] */
-.banner__section {
-  min-height: 420px;
-  height: 200px;
-  background-image: url(/assets/images/banner.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .slot-grid-container {

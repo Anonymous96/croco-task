@@ -1,13 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 import { ButtonComponent } from '../button/button.component';
-import { MenuItemComponent } from './menut-item.components';
+import { NavItemComponent } from './nav-item.component';
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories
-const meta: Meta<MenuItemComponent> = {
-  title: 'Example/Menu-Item',
-  component: MenuItemComponent,
-  tags: ['autodocs'],
-  render: (args: MenuItemComponent) => ({
+const meta: Meta<NavItemComponent> = {
+  title: 'Nav-Item',
+  component: NavItemComponent,
+  render: (args: NavItemComponent) => ({
     props: {
       backgroundColor: null,
       ...args,
@@ -16,7 +14,7 @@ const meta: Meta<MenuItemComponent> = {
 };
 
 export default meta;
-type Story = StoryObj<MenuItemComponent>;
+type Story = StoryObj<NavItemComponent>;
 
 export const Primary: Story = {
   args: {

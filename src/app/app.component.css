@@ -5,19 +5,10 @@ nav {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 80px 1fr; /* Sidebar and Content areas */
-  grid-template-rows: 80px 1fr;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: 60px 1fr;
   grid-template-areas:
     "sidebar header"
     "sidebar content";
   min-height: 100vh;
-}
-
-.banner__section {
-  min-height: 420px;
-  height: 200px;
-  background-image: url(/assets/images/banner.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }

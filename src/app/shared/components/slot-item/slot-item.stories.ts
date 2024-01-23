@@ -4,7 +4,6 @@ import { SlotItemComponent } from './slot-item.component';
 const meta: Meta<SlotItemComponent> = {
   title: 'Slot Item',
   component: SlotItemComponent,
-  tags: ['autodocs'],
   render: (args: SlotItemComponent) => ({
     props: {
       ...args,

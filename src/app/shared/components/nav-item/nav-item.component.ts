@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
-  selector: 'storybook-nav-item',
+  selector: 'app-nav-item',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './menu-item.component.html',
-  styleUrls: ['./menu-item.css'],
+  templateUrl: './nav-item.component.html',
+  styleUrl: './nav-item.component.css',
 })
-export class MenuItemComponent {
+export class NavItemComponent {
   @Input()
   label = 'Slots';
 

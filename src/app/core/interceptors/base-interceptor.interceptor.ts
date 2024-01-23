@@ -7,18 +7,21 @@ import {
   HttpRequest,
 } from '@angular/common/http';
 import { Observable, catchError, throwError } from 'rxjs';
-import { ErrorResponse } from '../models/slots.model';
+import { ErrorResponse } from '../models/IError.model';
+import { ToastrService } from 'ngx-toastr';
 
 @Injectable()
 export class BaseInterceptor implements HttpInterceptor {
+  constructor(private toastr: ToastrService) {}
   intercept(
     request: HttpRequest<any>,
     next: HttpHandler
   ): Observable<HttpEvent<any>> {
     return next.handle(request).pipe(
       catchError((error: ErrorResponse) => {
+        console.log(error, ' ERRRRRRR');
         if (error.statusCode === 404) {
-          alert(error.message);
+          this.toastr.error(error.message);
         } else {
           console.error('Server-side error', error);
         }

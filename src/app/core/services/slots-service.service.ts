@@ -1,15 +1,11 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, catchError, map, share, throwError } from 'rxjs';
-import {
-  Category,
-  CategoryResponse,
-  ProviderResponse,
-  Providers,
-  SlotsByProvider,
-  SlotsResponse,
-} from '../models/slots.model';
+import { Observable, map, share } from 'rxjs';
+
 import { environment } from '../../../environments/environment';
+import { ProviderResponse, Providers } from '../models/IProviders.model';
+import { SlotsByProvider, SlotsResponse } from '../models/ISlots.model';
+import { Category, CategoryResponse } from '../models/ICategory.model';
 
 @Injectable({
   providedIn: 'root',
@@ -37,11 +33,18 @@ export class SlotsServiceService {
   }
 
   getCategories(): Observable<Category[]> {
+    const params = new HttpParams().set('include', 'games');
     return this.http
-      .get<CategoryResponse>(`${this.baseUrl}/v2/slot/categories?include=games`)
+      .get<CategoryResponse>(`${this.baseUrl}/v2/slot/categories`, { params })
       .pipe(
         share(),
         map((items) => items?.data)
       );
+  }
+
+  getDesktopCategories(): Observable<Category[]> {
+    return this.getCategories().pipe(
+      map((res) => res.filter((item) => item.platform !== 'mobile'))
+    );
   }
 }

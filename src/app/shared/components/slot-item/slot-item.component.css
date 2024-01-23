@@ -10,6 +10,7 @@
   min-height: 180px;
   position: relative;
   height: 100%;
+  max-width: 550px;
 }
 
 .grid-item .text {

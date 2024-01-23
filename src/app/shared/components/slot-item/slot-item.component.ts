@@ -7,7 +7,7 @@ import { ButtonComponent } from '../button/button.component';
   standalone: true,
   imports: [CommonModule, ButtonComponent],
   templateUrl: './slot-item.component.html',
-  styleUrls: ['./slot-item.css'],
+  styleUrls: ['./slot-item.component.css'],
 })
 export class SlotItemComponent {
   @Input()
@@ -21,8 +21,4 @@ export class SlotItemComponent {
 
   @Output()
   onClick = new EventEmitter<Event>();
-
-  clickButton() {
-    console.log('Click');
-  }
 }

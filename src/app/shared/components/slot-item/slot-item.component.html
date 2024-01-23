@@ -1,21 +1,21 @@
 <div class="grid-item" [style.backgroundImage]="'url(' + imgUrl + ')'">
   <div class="tag">
     @if(tags.length){ @for(tag of tags; track tag) {
-    <storybook-button
+    <app-button
       [primary]="true"
       size="small"
       [label]="tag | uppercase"
-    ></storybook-button>
+    ></app-button>
     } }
   </div>
   <span class="text">{{ title }}</span>
 
   <div class="play__overlay">
-    <storybook-button
+    <app-button
       [primary]="true"
       size="large"
       label="PLAY"
       (onClick)="onClick.emit($event)"
-    ></storybook-button>
+    ></app-button>
   </div>
 </div>

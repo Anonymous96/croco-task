@@ -1,7 +1,15 @@
+<ngx-spinner
+  bdColor="rgba(0, 0, 0, 0.8)"
+  size="medium"
+  color="#fff"
+  type="square-jelly-box"
+  [fullScreen]="true"
+  ><p style="color: white">Loading...</p></ngx-spinner
+>
 <section class="banner__section"></section>
 <section class="tab__section">
   <div class="tabs">
-    @if (slotCategories.length){ @for (category of slotCategories; track
+    @if (slotCategories().length){ @for (category of slotCategories(); track
     category.name) {
     <div class="tab_item" (click)="selectCategory(category)">
       <span style="margin-left: 0.5rem">{{ category.name }}</span>
