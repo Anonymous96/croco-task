@@ -1,0 +1,8 @@
+.banner-section {
+  min-height: 420px;
+  height: 200px;
+  background-image: url(/assets/images/banner.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -8,11 +8,12 @@ import { SlotItemComponent } from '../../shared/components/slot-item/slot-item.c
 import { ToastrService } from 'ngx-toastr';
 import { SELECTED_PROVIDER } from '../../core/constants';
 import { NgxSpinnerModule, NgxSpinnerService } from 'ngx-spinner';
+import { BannerComponent } from '../../shared/components/banner/banner.component';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [SlotItemComponent, CommonModule, NgxSpinnerModule],
+  imports: [SlotItemComponent, CommonModule, NgxSpinnerModule, BannerComponent],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css',
 })

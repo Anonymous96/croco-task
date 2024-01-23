@@ -134,3 +134,8 @@
   color: green;
   transition: max-height 0.3s ease-in-out;
 }
+
+.category__section {
+  background-color: #272d36;
+  position: relative;
+}

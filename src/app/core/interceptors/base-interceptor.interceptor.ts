@@ -19,7 +19,6 @@ export class BaseInterceptor implements HttpInterceptor {
   ): Observable<HttpEvent<any>> {
     return next.handle(request).pipe(
       catchError((error: ErrorResponse) => {
-        console.log(error, ' ERRRRRRR');
         if (error.statusCode === 404) {
           this.toastr.error(error.message);
         } else {
